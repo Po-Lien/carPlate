@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.signController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="121.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #3B3B3B;">
+         <children>
+            <JFXButton fx:id="logInBtn" layoutX="25.0" layoutY="261.0" onAction="#logIn" prefHeight="36.0" prefWidth="249.0" style="-fx-background-color: #7D7D7D;" text="登入">
+               <textFill>
+                  <RadialGradient centerX="0.4963099349468837" centerY="0.5473186119873817" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5964912176132202" green="0.5762400031089783" blue="0.5762400031089783" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField focusColor="#b92525" layoutX="25.0" layoutY="48.0" prefHeight="45.0" prefWidth="250.0" promptText="帳號">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+            <JFXPasswordField focusColor="#b92525" layoutX="25.0" layoutY="129.0" prefHeight="45.0" prefWidth="250.0" promptText="密碼">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXPasswordField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="50.0" layoutY="38.0" prefHeight="59.0" prefWidth="300.0" style="-fx-alignment: center;" text="登入" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
